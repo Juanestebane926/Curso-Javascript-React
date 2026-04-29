@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 3 - Explicacion</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <p class="eyebrow">Clase 3</p>
+        <h1>Explicacion del docente</h1>
+        <p class="subtitle">
+          Aqui puedes demostrar objetos, arrays, metodos y fetch antes de pasar
+          a la actividad.
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>1) Objetos</h2>
+        <p>Salida del ejemplo basico:</p>
+        <pre id="salida-objeto">(ver consola)</pre>
+      </section>
+
+      <section class="card">
+        <h2>2) Array de objetos</h2>
+        <p>Lista renderizada con <code>for</code> o <code>map</code>:</p>
+        <div id="lista-estudiantes" class="list"></div>
+      </section>
+
+      <section class="card">
+        <h2>3) Metodos principales de arrays</h2>
+        <p><code>push</code>, <code>find</code>, <code>filter</code>, <code>map</code></p>
+        <pre id="salida-metodos">(ver consola)</pre>
+      </section>
+
+      <section class="card">
+        <h2>4) Fetch con PokeAPI</h2>
+        <p>Demo simple con resultados ya simplificados para explicar el flujo.</p>
+        <div class="actions">
+          <button id="btn-pokemon">Cargar Pokemon</button>
+          <span id="estado">Listo</span>
+        </div>
+        <div id="lista-pokemon" class="grid"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

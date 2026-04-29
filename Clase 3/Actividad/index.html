@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 3 - Actividad</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <p class="eyebrow">Actividad PokeAPI</p>
+        <h1>Pokemon aleatorio y busqueda por numero</h1>
+        <p class="subtitle">
+          Completa los TODO en app.js para que el boton muestre un pokemon
+          aleatorio y el input busque por numero de la pokedex.
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>Reto integrado</h2>
+        <p>
+          Un solo ejercicio: usa un boton para ver un pokemon aleatorio y un
+          input para buscar el pokemon por su numero de la pokedex.
+          La API real trae muchos campos, pero aqui solo vamos a trabajar con
+          tres: <strong>id</strong>, <strong>nombre</strong> e <strong>imagen</strong>.
+        </p>
+
+        <div class="actions">
+          <button id="btn-aleatorio">Pokemon aleatorio</button>
+          <span id="estado">Listo para empezar</span>
+        </div>
+
+        <div class="search">
+          <label for="numero-pokemon">Numero de la Pokedex</label>
+          <div class="search-row">
+            <input
+              id="numero-pokemon"
+              type="number"
+              min="1"
+              max="151"
+              placeholder="Ej: 25"
+            />
+            <button id="btn-buscar">Buscar</button>
+          </div>
+          <p class="hint">Usa numeros del 1 al 151.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Resultado</h2>
+        <div id="pokemon-card" class="pokemon-card empty">
+          <p>Aqui aparecera el pokemon.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Lo que deben completar</h2>
+        <ol class="tasks">
+          <li>La funcion que hace el fetch con async/await.</li>
+          <li>La funcion que convierte la respuesta en un objeto simple.</li>
+          <li>La funcion que pinta nombre e imagen en pantalla.</li>
+        </ol>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
